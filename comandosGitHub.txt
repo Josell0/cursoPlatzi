@@ -24,4 +24,8 @@ code (y espacio) / abre visual code
 code (mas nombre del archivo mas su extension) / abre el archivo en visual code
 
 git reset (pegamos el codigo del commit) --hard / volvemos a ser de ese archivo de repositorio el head 
-\
+
+
+mk dir (nombre de la carpeta) / crea una carpeta en el lugar en donde estas
+
+cd (nombre de carpeta) / te mueve a la carpeta indicada
