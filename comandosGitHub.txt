@@ -1,0 +1,27 @@
+Comandos para uzar GitHub
+
+git init / es para inicializar un nuevo repositorio en la carpeta raiz
+
+git add . / es para mandar los archivos a staging o la memoria ram
+
+git add (y escribimos el nombre del archivo con su extension) / es para mandar solamente ese archivo al repositorio
+
+git status / es para saber si tenemos archivos en memoria
+
+git rm --cached (nombre del archivo con extension) / es para quitar el archivo de memoria
+
+git commit -m "(escribir un mensaje)" / es para hacer un commit al repositorio o la carpeta master (aqui comenzamos a crear toda la historia de nuestro repositorio)
+
+
+git show / te muestra la historia del repositorio
+
+git log / te muestras los commits que se han hecho en el repositorio
+
+touch (nombre del archivo y su extension) / crea un archivo nuevo en la carpeta en donde se encuenta
+
+code (y espacio) / abre visual code
+
+code (mas nombre del archivo mas su extension) / abre el archivo en visual code
+
+git reset (pegamos el codigo del commit) --hard / volvemos a ser de ese archivo de repositorio el head 
+\
