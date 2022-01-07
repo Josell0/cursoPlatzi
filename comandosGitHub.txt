@@ -14,12 +14,18 @@ git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda
 
 git commit -m "(escribir un mensaje)" / es para hacer un commit al repositorio o la carpeta master (aqui comenzamos a crear toda la historia de nuestro repositorio)
 
-git commit -am / tambien sube los archivos al repositorio
+<<<<<<< HEAD
+git commit -am / tambien sube los archivos al repositorio y la M es para el mensaje
 
+=======
+git commit -a / mando todos los archivos que ya han sido creados pero modificados directo al repositorio
+>>>>>>> cabcera
 
 git show / te muestra la historia del repositorio
 
 git log / te muestras los commits que se han hecho en el repositorio
+
+git log --stat / muestra todos los commits y sus cambios
 
 touch (nombre del archivo y su extension) / crea un archivo nuevo en la carpeta en donde se encuenta
 
@@ -49,6 +55,11 @@ git push / sube todo al repositorio remoto
 
 git pull / trae todo lo del repositorio remoto y lo combina con lo que tienes en el directorio local
 
+<<<<<<< HEAD
 git branch (nombre de la rama) / crea un nuevo archivo
 
 git branch / muestra todas las ramas que existen cuando estan en la rama principal
+=======
+git branch "(mas un nombre)" / genera apartir de ahora una rama con las modificaciones que se han hecho
+
+>>>>>>> cabcera
