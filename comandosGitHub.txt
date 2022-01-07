@@ -8,7 +8,9 @@ git add (y escribimos el nombre del archivo con su extension) / es para mandar s
 
 git status / es para saber si tenemos archivos en memoria
 
-git rm --cached (nombre del archivo con extension) / es para quitar el archivo de memoria
+git rm --cached (nombre del archivo con extension) / es para quitar el archivo de memoria.
+git rm --cached: Elimina los archivos de nuestro repositorio local y del área de staging, pero los mantiene en nuestro disco duro. Básicamente le dice a Git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
 git commit -m "(escribir un mensaje)" / es para hacer un commit al repositorio o la carpeta master (aqui comenzamos a crear toda la historia de nuestro repositorio)
 
@@ -24,8 +26,23 @@ code (y espacio) / abre visual code
 code (mas nombre del archivo mas su extension) / abre el archivo en visual code
 
 git reset (pegamos el codigo del commit) --hard / volvemos a ser de ese archivo de repositorio el head 
+git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
+git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 
 
 mk dir (nombre de la carpeta) / crea una carpeta en el lugar en donde estas
 
 cd (nombre de carpeta) / te mueve a la carpeta indicada
+
+cd ../  / retrocede una carpeta
+
+git checkout (copiamos el codigo de la version del commit) (ponemos el nombre del archivo) / abre la version del archivo que se llamo con el codigo
+
+git checkout master (nombre del archivo) / llama al archivo master del ultimo commit hecho
+
+git clone url / trae todos los archivos de repositorio remoto y los copia en en directorio de trabajo y en el repositorio local
+
+git push / sube todo al repositorio remoto
+
+git pull / trae todo lo del repositorio remoto y lo combina con lo que tienes en el directorio local
