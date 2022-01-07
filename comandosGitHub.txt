@@ -50,5 +50,5 @@ git push / sube todo al repositorio remoto
 
 git pull / trae todo lo del repositorio remoto y lo combina con lo que tienes en el directorio local
 
-git branch (mas un nombre) / genera apartir de ahora una rama con las modificaciones que se han hecho
+git branch "(mas un nombre)" / genera apartir de ahora una rama con las modificaciones que se han hecho
 
